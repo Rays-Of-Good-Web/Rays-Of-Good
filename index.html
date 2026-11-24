@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RAYS OF GOOD | See good. Do good.</title>
+<style>
+:root{--navy:#102f50;--yellow:#ffd15c;--cream:#fff9ed;--blue:#8eb5d4;--ink:#18344e;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 7%;background:var(--cream);position:sticky;top:0;z-index:5;border-bottom:1px solid #e8e0d1}
+.logo{display:inline-flex;align-items:center;text-decoration:none}.logo img{display:block;width:min(260px,48vw);height:auto;max-height:58px;object-fit:contain;object-position:left center}
+nav a{color:var(--navy);text-decoration:none;margin-left:24px;font-weight:700;font-size:14px}
+.hero{padding:80px 7% 75px;background:linear-gradient(120deg,#d8e9f4 0%,#f8f1e3 58%,#ffe08a 100%);display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center;min-height:510px}
+.eyebrow{font-weight:800;letter-spacing:3px;text-transform:uppercase;font-size:12px;color:#456986}
+h1{font-size:clamp(48px,7vw,86px);line-height:.95;margin:16px 0;color:var(--navy);letter-spacing:-3px}
+.hero p{font-size:19px;line-height:1.55;max-width:520px}
+.btn{display:inline-block;background:var(--navy);color:white;text-decoration:none;padding:15px 24px;border-radius:30px;font-weight:800;margin-top:14px}
+.hero-art{min-height:320px;display:flex;align-items:center;justify-content:center;position:relative}
+.sun{width:280px;height:280px;border-radius:50%;background:var(--yellow);display:flex;align-items:center;justify-content:center;box-shadow:0 20px 55px #18344e22;position:relative}
+.sun:before{content:"";position:absolute;inset:-28px;border:5px dashed var(--navy);border-radius:50%;opacity:.65}
+.glasses{width:230px;height:90px;position:relative;display:flex;gap:12px;z-index:1}
+.lens{height:78px;width:108px;background:var(--navy);border:7px solid #081c30;border-radius:18px 18px 34px 34px;box-shadow:inset 0 0 0 2px #ffffff55}
+.bridge{position:absolute;width:25px;height:10px;border-top:7px solid #081c30;left:102px;top:14px}
+.temple{position:absolute;width:35px;height:7px;background:#081c30;top:12px;left:-28px;transform:rotate(10deg)}
+.temple.r{left:auto;right:-28px;transform:rotate(-10deg)}
+.sun-label{position:absolute;bottom:-46px;font-weight:900;letter-spacing:3px;color:var(--navy);font-size:14px}
+section{padding:70px 7%}
+.section-title{text-align:center;color:var(--navy);font-size:clamp(30px,4vw,46px);margin:0 0 12px}
+.sub{text-align:center;max-width:650px;margin:0 auto 36px;line-height:1.6}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.product{background:white;border-radius:20px;padding:20px;text-align:center;box-shadow:0 8px 24px #18344e10}
+.product-art{height:150px;border-radius:15px;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.product:nth-child(1) .product-art{background:#e5edf2}.product:nth-child(2) .product-art{background:#f6e6c9}.product:nth-child(3) .product-art{background:#dcecf1}.product:nth-child(4) .product-art{background:#e7e8df}
+.mini-glasses{width:150px;height:58px;display:flex;gap:7px;position:relative}
+.mini-glasses span{width:72px;height:52px;border:5px solid #111e2a;background:#263d51;border-radius:14px 14px 25px 25px}
+.mini-glasses:after{content:"";position:absolute;left:68px;top:9px;width:17px;border-top:5px solid #111e2a}
+.product h3{margin:8px 0;color:var(--navy)}
+.price{font-size:20px;font-weight:900;color:var(--navy)}
+.cause{background:var(--navy);color:white;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.cause h2{font-size:clamp(34px,5vw,54px);line-height:1.02;margin:10px 0 18px;color:var(--yellow)}
+.cause p{font-size:17px;line-height:1.7;color:#f5f2e9}
+.eye-card{background:#f7f1e4;color:var(--navy);border-radius:24px;padding:35px;text-align:center}
+.eye-symbol{font-size:100px;line-height:1.1}
+.eye-card strong{font-size:20px}
+.impact{background:#e7f0f5;text-align:center}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}
+.step{background:white;border-radius:18px;padding:25px}
+.step b{display:block;font-size:30px;color:#d79d16;margin-bottom:10px}
+.about{max-width:850px;margin:auto;text-align:center;line-height:1.7}
+footer{background:#0b243d;color:white;padding:32px 7%;text-align:center}
+footer a{color:var(--yellow)}
+.note{font-size:12px;opacity:.8;line-height:1.5;max-width:850px;margin:14px auto 0}
+@media(max-width:800px){header{padding:16px 5%;flex-wrap:wrap;gap:12px}nav a{margin:0 12px 0 0}.hero,.cause{grid-template-columns:1fr;text-align:center}.hero p{margin-left:auto;margin-right:auto}.products{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}.hero-art{min-height:300px}}
+@media(max-width:440px){.products{grid-template-columns:1fr}section{padding:55px 6%}.hero{padding:60px 6%}}
+</style>
+</head>
+<body>
+<header>
+<a class="logo" href="#" aria-label="Rays of Good home"><img src="rays-of-good-logo.png" alt="Rays of Good logo"></a>
+<nav><a href="#shop">Shop</a><a href="#cause">Our cause</a><a href="#about">About</a></nav>
+</header>
+<main>
+<section class="hero">
+<div>
+<div class="eyebrow">A little sunshine. A lot of good.</div>
+<h1>SEE GOOD.<br>DO GOOD.</h1>
+<p>Every pair of RAYS OF GOOD sunglasses is a chance to help make clearer vision possible for more people.</p>
+<a class="btn" href="#shop">SHOP THE SUNNIES</a>
+</div>
+<div class="hero-art"><div class="sun"><div class="glasses"><i class="temple"></i><span class="lens"></span><i class="bridge"></i><span class="lens"></span><i class="temple r"></i></div><div class="sun-label">LOOK GOOD. DO GOOD.</div></div></div>
+</section>
+
+<section id="shop">
+<h2 class="section-title">FIND YOUR SUNNY SIDE</h2>
+<p class="sub">Four styles. One good cause. Choose your favourite pair.</p>
+<div class="products">
+<div class="product"><div class="product-art"><div class="mini-glasses"><span></span><span></span></div></div><h3>The Classic</h3><div class="price">$34.95</div></div>
+<div class="product"><div class="product-art"><div class="mini-glasses"><span style="background:#684a32"></span><span style="background:#684a32"></span></div></div><h3>The Sunset</h3><div class="price">$34.95</div></div>
+<div class="product"><div class="product-art"><div class="mini-glasses"><span style="background:#496d7e"></span><span style="background:#496d7e"></span></div></div><h3>The Ocean</h3><div class="price">$34.95</div></div>
+<div class="product"><div class="product-art"><div class="mini-glasses"><span style="background:#65715a"></span><span style="background:#65715a"></span></div></div><h3>The Rose</h3><div class="price">$34.95</div></div>
+</div>
+</section>
+
+<section class="cause" id="cause">
+<div>
+<div class="eyebrow" style="color:#ffd15c">The good behind the sunnies</div>
+<h2>HELP THE WORLD SEE A BRIGHTER FUTURE.</h2>
+<p>We’re supporting the work of The Fred Hollows Foundation, which works to improve eye health and help people access the eye care they need.</p>
+<p>Our aim is for money raised through RAYS OF GOOD sunglasses sales to contribute to this cause.</p>
+<a class="btn" style="background:#ffd15c;color:#102f50" href="https://www.hollows.org/" target="_blank" rel="noopener">MEET THE FRED HOLLOWS FOUNDATION</a>
+</div>
+<div class="eye-card"><div class="eye-symbol">◉</div><strong>Clear vision can change lives.</strong><p>See the good. Share the good.</p></div>
+</section>
+
+<section class="impact">
+<h2 class="section-title">A SMALL PAIR. A BIGGER PURPOSE.</h2>
+<p class="sub">Your support helps us raise funds for better access to eye care.</p>
+<div class="steps">
+<div class="step"><b>01</b><strong>Choose your sunnies</strong><p>Pick the style that feels like you.</p></div>
+<div class="step"><b>02</b><strong>Support the cause</strong><p>Money raised through sales is intended to support eye health work.</p></div>
+<div class="step"><b>03</b><strong>Spread the sunshine</strong><p>Share RAYS OF GOOD and help more people hear about the cause.</p></div>
+</div>
+</section>
+
+<section id="about">
+<div class="about">
+<h2 class="section-title">WHY RAYS OF GOOD?</h2>
+<p>We’re a social enterprise with a simple idea: sell sunnies and use the money raised to support a brighter future for people around the world. We believe everyone deserves the opportunity to access good eye care.</p>
+<p><strong>RAYS OF GOOD — A little sunshine. A lot of good.</strong></p>
+</div>
+</section>
+</main>
+<footer>
+<strong>RAYS OF GOOD</strong>
+<p>See good. Do good.</p>
+<p><a href="https://www.hollows.org/" target="_blank" rel="noopener">The Fred Hollows Foundation</a></p>
+<p class="note">This is a student social enterprise project. RAYS OF GOOD is not presented as an official partner of The Fred Hollows Foundation. Any fundraising or donation arrangement should be confirmed with the Foundation before sales begin. The website is a demonstration only: it does not process payments or collect orders.</p>
+</footer>
+</body>
+</html>
