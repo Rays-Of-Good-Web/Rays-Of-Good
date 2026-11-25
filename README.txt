@@ -1,17 +1,32 @@
-RAYS OF GOOD — Fred Hollows Foundation version
+RAYS OF GOOD
+Website update for Rays-Of-Good-Web/rays-of-good
 
-This is a static website for your social enterprise project.
-- Uses your supplied RAYS OF GOOD logo (keep rays-of-good-logo.png beside index.html).
-- All four sunglasses are listed at $34.95.
-- The cause section explains the intention to support The Fred Hollows Foundation.
-- The site links to the Foundation's official website.
-- The site is a demonstration only: it does not process payments or collect orders.
+PREVIEW ON YOUR COMPUTER
+1. Extract the ZIP. Keep index.html, styles.css and the assets folder together.
+2. Open index.html in your browser. The site runs with no build step.
 
-IMPORTANT:
-Before collecting money or using the Foundation's name/logo in a way that suggests an official partnership, contact The Fred Hollows Foundation and confirm the fundraising arrangement. This site deliberately does not claim an official partnership or a specific donation amount.
+UPLOAD TO YOUR EXISTING REPOSITORY
+1. Sign in and open https://github.com/Rays-Of-Good-Web/rays-of-good
+2. In Settings > Pages, check the current publishing source. If it publishes
+   from a branch, note the selected branch and folder, usually main and /(root).
+   Keep the existing Pages setup and custom domain if you already have one.
+3. Return to Code and select the publishing branch. Open the configured
+   publishing folder. Choose Add file > Upload files.
+4. Drag in the extracted contents (index.html, styles.css, README.txt and the
+   assets folder). Upload the contents, not the ZIP or its outer folder.
+   Keep the assets folder intact and index.html at the publishing folder's
+   top level. The upload replaces files with matching names.
+5. Choose Commit changes. If the branch requires a pull request, create and
+   merge it into the publishing branch. If Pages uses GitHub Actions, check
+   the existing workflow for its source folder and keep that workflow.
 
-To publish with GitHub Pages:
-1. Open your GitHub repository.
-2. Upload index.html to the repository's main/root folder (replace the previous index.html if asked).
-3. Commit the change.
-4. GitHub Pages should redeploy automatically.
+CHECK THE LIVE UPDATE
+1. Open Actions and check that the latest Pages deployment succeeded.
+2. In Settings > Pages, select Visit site. Updates can take up to 10 minutes.
+3. Refresh and check for LOOK GOOD. DO GOOD., the four $34.95 AUD prices,
+   and the matching Kmart listing links. If you still see the old version,
+   open the live URL in a private browser tab.
+
+ABOUT THE ASSETS
+Product images are from the matching Kmart listings. The hero reuses the
+Square Frame product image. The header uses the brand name in text.
